@@ -2,16 +2,15 @@ sudo: required
 
 os:
   - linux
-  - osx
+
+virt: lxd
+
+group: edge
 
 arch:
   - amd64
   - arm64
-
-jobs:
-  exclude:
-    os: osx
-    arch: arm64
+  - arm64-graviton2
 
 language: c
 
